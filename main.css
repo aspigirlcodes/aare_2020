@@ -1,0 +1,139 @@
+#warning-message { 
+    display: none; 
+}
+@media only screen and (max-width: 400px) and (orientation:portrait){
+    #wrapper { display:none; }
+    #warning-message { display:block; }
+}
+@media only screen and (orientation:landscape){
+    #warning-message { display:none; }
+}
+.intro-title{
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 675px){
+    .intro-title{
+        text-align: start;
+        width: 50%;
+        font-size: 4.5rem;
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 900px){
+    .intro-title{
+        text-align: start;
+        width: 50%;
+        font-size: 6rem;
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    .intro-title{
+        text-align: start;
+        width: 50%;
+        font-size: 8rem;
+        top: 20%;
+    }
+}
+
+
+
+
+.station-text{
+    font-size: 6rem;
+}
+.city-text{
+    font-size: 12rem;
+    font-weight: 300;
+}
+
+
+.intro-text-1{
+    top: 50%;
+    width: 50%;
+}
+
+
+.intro-text-2{
+    display: none;
+}
+
+@media only screen and (min-width: 800px){
+    .intro-text-2{
+        display: block;
+        position: absolute;
+        top: 70%;
+        width: 50%;
+    }
+    .intro-text-2-copy{
+        display: none;
+    }
+}
+
+.intro-text-2-copy{
+    margin-top: 7rem;
+}
+
+
+.graph-explainer{
+    padding-left: 70px;
+    width: 50%;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .graph-explainer{
+        font-size: smaller;
+    }
+}
+
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    padding: 0.6em 1em;
+    background: #fff;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    z-index: 10;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+}
+
+.tooltip:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: translate(-50%, 50%) rotate(45deg);
+    transform-origin: center center;
+    z-index: 10;
+}
+
+.tooltip-date {
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.voronoi {
+    fill: transparent;
+}
+
+.listening-rect {
+    fill: transparent;
+}
