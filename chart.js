@@ -1,4 +1,5 @@
 async function drawTempLineChart() {
+    // 1. ACCESS DATA
     const dataset = await d3.json("./data.json")
 
     const aareTempAccessor = d => d.aareTempMax
@@ -9,10 +10,7 @@ async function drawTempLineChart() {
     const dateParser = d3.timeParse("%Y-%m-%dT00:00:00")
     xAccessor = d => dateParser(d.date)
 
-    
-        
-    
-
+    // 2. DIMENSIONS
     let dimensions = {
         width: 700,
         height: 350,
@@ -26,6 +24,7 @@ async function drawTempLineChart() {
     dimensions.boundedWidth = dimensions.width - dimensions.margin.left - dimensions.margin.right
     dimensions.boundedHeight = dimensions.height - dimensions.margin.top - dimensions.margin.bottom
 
+    // 3. DRAW CANVAS
     const wrapper = d3.select("#temp-timeline")
         .append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
@@ -35,6 +34,7 @@ async function drawTempLineChart() {
         .style("transform", `translate(${dimensions.margin.left}px,
             ${dimensions.margin.top}px)`)
     
+    //4. CREATE SCALES
     const yScale = d3.scaleLinear()
         .domain(d3.extent(dataset, airTempAccessor))
         .range([dimensions.boundedHeight, 0])
@@ -43,6 +43,7 @@ async function drawTempLineChart() {
         .domain(d3.extent(dataset, xAccessor))
         .range([0, dimensions.boundedWidth])
 
+    // 5. DRAW DATA
     const airLineGenerator = d3.line()
         .x(d => xScale(xAccessor(d)))
         .y(d => yScale(airTempAccessor(d)))
@@ -75,6 +76,8 @@ async function drawTempLineChart() {
         .attr("stroke", "darkcyan")
         .attr("stroke-width", 2)
     
+    //6. DRAW PERIPHERALS
+        //axes
     const yAxisGenerator = d3.axisLeft()
         .scale(yScale)
     
@@ -97,6 +100,7 @@ async function drawTempLineChart() {
         .call(xAxisGenerator) 
         .style("transform", `translateY(${dimensions.boundedHeight}px)`)
 
+        //legend
     const legend = [
         {
             color: "darkslategrey",
@@ -147,7 +151,8 @@ async function drawTempLineChart() {
     }
     makeLegend(legend.slice(0,2))
 
-
+    //7. INTERACTIONS  
+        //hover tooltip
     const listeningRect = bounds.append("rect")
         .attr("class", "listening-rect")
         .attr("width", dimensions.boundedWidth)
@@ -211,6 +216,7 @@ async function drawTempLineChart() {
         tooltipLine.style("opacity", 0)
     }
 
+        //clickables
     d3.select("#averager").on("click", function(){
         airLine.transition().duration(1)
             .attr("d", airLineGenerator(dataset.slice(15, dataset.length-15)))
@@ -240,6 +246,7 @@ async function drawTempLineChart() {
 }
 
 async function drawTempScatter() {
+    // 1. ACCESS DATA
     let dataset = await d3.json("./data.json")
 
     const xAccessor = d => d.airTempMax  
@@ -247,6 +254,7 @@ async function drawTempScatter() {
     const dateParser = d3.timeParse("%Y-%m-%dT00:00:00")
     const dateAccessor = d => dateParser(d.date)
 
+    // 2. DIMENSIONS
     const dimensions = {
         width: 700,
         height: 700,
@@ -262,7 +270,7 @@ async function drawTempScatter() {
     dimensions.boundedHeight = dimensions.height - dimensions.margin.top
         - dimensions.margin.bottom
 
-
+    // 3. DRAW CANVAS
     const wrapper = d3.select("#temp-scatter")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
@@ -272,6 +280,8 @@ async function drawTempScatter() {
         .style("transform", `translate(${dimensions.margin.left}px,
             ${dimensions.margin.top}px)`)
 
+
+    //4. CREATE SCALES
     const xScale = d3.scaleLinear()
         .domain(d3.extent(dataset, xAccessor))
         .range([0, dimensions.boundedWidth])
@@ -281,23 +291,31 @@ async function drawTempScatter() {
         .range([dimensions.boundedHeight, 0])
         .nice()
 
-    const dots = bounds.selectAll("circle")
-        .data(dataset)
-      .enter().append("circle")
-        .attr("cx", d => xScale(xAccessor(d)))
-        .attr("cy", d => yScale(yAccessor(d)))
-        .attr("r", 5)
-        .attr("fill", d => {
-            if(dateAccessor(d) < new Date("2020-03-20")){
-                return "deepskyblue"}
-            else if (dateAccessor(d) < new Date("2020-06-20")){
-                return "forestgreen"
-            }else if (dateAccessor(d) < new Date("2020-09-22")){
-                return "orange"
-            }else if (dateAccessor(d) < new Date("2020-12-21")){
-                return "orangered"
-            }else{return "deepskyblue"}
-        })
+
+    // 5. DRAW DATA
+
+    function joinCircles(dataset){
+        return bounds.selectAll("circle")
+            .data(dataset)
+            .join("circle")
+            .attr("cx", d => xScale(xAccessor(d)))
+            .attr("cy", d => yScale(yAccessor(d)))
+            .attr("r", 5)
+            .attr("fill", d => {
+                if(dateAccessor(d) < new Date("2020-03-20")){
+                    return "deepskyblue"}
+                else if (dateAccessor(d) < new Date("2020-06-20")){
+                    return "forestgreen"
+                }else if (dateAccessor(d) < new Date("2020-09-22")){
+                    return "orange"
+                }else if (dateAccessor(d) < new Date("2020-12-21")){
+                    return "orangered"
+                }else{return "deepskyblue"}
+            })
+    }
+
+
+    const dots = joinCircles(dataset)
     
     const line = bounds.append("line")
         .attr("x1", xScale(0))
@@ -307,7 +325,8 @@ async function drawTempScatter() {
         .attr("stroke", "black")
         .attr("stroke-width", 3)
 
-    
+    //6. DRAW PERIPHERALS
+        //axes
     const xAxisGenerator = d3.axisBottom()
         .scale(xScale)
 
@@ -336,7 +355,8 @@ async function drawTempScatter() {
         .html("Aare Daily Max. Temperature (&deg;C)")
         .style("transform", "rotate(-90deg)")
         .style("text-anchor", "middle")
-
+    
+        // legend
     const legendDimensions = {
         width: 100,
         height: 100
@@ -383,8 +403,8 @@ async function drawTempScatter() {
         }
     )
     
-
-    
+    //7. INTERACTIONS  
+        //hover tooltip
     const delaunay = d3.Delaunay.from(
         dataset,
         d => xScale(xAccessor(d)),
@@ -425,6 +445,7 @@ async function drawTempScatter() {
     tooltip.select("#date")
         .text(formatDate(dateAccessor(datum)))
 
+    // note: needs scale factor for real width vs defined base width
     const width = parseFloat(wrapper.style("width").replace("px", ""))
     
     const x = (xScale(xAccessor(datum))
@@ -450,93 +471,28 @@ async function drawTempScatter() {
     }
 
 
-
+        //clickables
+    
     d3.select("#winter").on("click", function(){
-        bounds.selectAll("circle")
-        .data(dataset.filter(d => dateAccessor(d) < new Date("2020-03-20") || dateAccessor(d) >= new Date("2020-12-21")))
-        .join("circle")
-        .attr("cx", d => xScale(xAccessor(d)))
-        .attr("cy", d => yScale(yAccessor(d)))
-        .attr("r", 5)
-        .attr("fill", d => {
-            if(dateAccessor(d) < new Date("2020-03-20")){
-                return "deepskyblue"}
-            else if (dateAccessor(d) < new Date("2020-06-20")){
-                return "forestgreen"
-            }else if (dateAccessor(d) < new Date("2020-09-22")){
-                return "orange"
-            }else if (dateAccessor(d) < new Date("2020-12-21")){
-                return "orangered"
-            }else{return "deepskyblue"}
-        })
-        
-    })
+        joinCircles(dataset.filter(d => dateAccessor(d) < new Date("2020-03-20") || dateAccessor(d) >= new Date("2020-12-21")))
+    })   
+    
     d3.select("#spring").on("click", function(){
-        bounds.selectAll("circle")
-        .data(dataset.filter(d => dateAccessor(d) < new Date("2020-06-20") || dateAccessor(d) >= new Date("2020-12-21")))
-        .join("circle")
-        .attr("cx", d => xScale(xAccessor(d)))
-        .attr("cy", d => yScale(yAccessor(d)))
-        .attr("r", 5)
-        .attr("fill", d => {
-            if(dateAccessor(d) < new Date("2020-03-20")){
-                return "deepskyblue"}
-            else if (dateAccessor(d) < new Date("2020-06-20")){
-                return "forestgreen"
-            }else if (dateAccessor(d) < new Date("2020-09-22")){
-                return "orange"
-            }else if (dateAccessor(d) < new Date("2020-12-21")){
-                return "orangered"
-            }else{return "deepskyblue"}
-        })
-        
+        joinCircles(dataset.filter(d => dateAccessor(d) < new Date("2020-06-20") || dateAccessor(d) >= new Date("2020-12-21")))
     })
 
     d3.select("#summer").on("click", function(){
-        bounds.selectAll("circle")
-        .data(dataset.filter(d => dateAccessor(d) < new Date("2020-09-22") || dateAccessor(d) >= new Date("2020-12-21")))
-        .join("circle")
-        .attr("cx", d => xScale(xAccessor(d)))
-        .attr("cy", d => yScale(yAccessor(d)))
-        .attr("r", 5)
-        .attr("fill", d => {
-            if(dateAccessor(d) < new Date("2020-03-20")){
-                return "deepskyblue"}
-            else if (dateAccessor(d) < new Date("2020-06-20")){
-                return "forestgreen"
-            }else if (dateAccessor(d) < new Date("2020-09-22")){
-                return "orange"
-            }else if (dateAccessor(d) < new Date("2020-12-21")){
-                return "orangered"
-            }else{return "deepskyblue"}
-        })
-        
+        joinCircles(dataset.filter(d => dateAccessor(d) < new Date("2020-09-22") || dateAccessor(d) >= new Date("2020-12-21")))        
     })
 
     d3.select("#autumn").on("click", function(){
-        bounds.selectAll("circle")
-        .data(dataset)
-        .join("circle")
-        .attr("cx", d => xScale(xAccessor(d)))
-        .attr("cy", d => yScale(yAccessor(d)))
-        .attr("r", 5)
-        .attr("fill", d => {
-            if(dateAccessor(d) < new Date("2020-03-20")){
-                return "deepskyblue"}
-            else if (dateAccessor(d) < new Date("2020-06-20")){
-                return "forestgreen"
-            }else if (dateAccessor(d) < new Date("2020-09-22")){
-                return "orange"
-            }else if (dateAccessor(d) < new Date("2020-12-21")){
-                return "orangered"
-            }else{return "deepskyblue"}
-        })
-        
+        joinCircles(dataset)        
     })
     
 }
 
 async function drawHeightLineChart() {
+    // 1. ACCESS DATA
     const dataset = await d3.json("./data.json")
 
     const heightAccessor = d => d.aareHeight
@@ -548,6 +504,7 @@ async function drawHeightLineChart() {
     const dateParser = d3.timeParse("%Y-%m-%dT00:00:00")
     xAccessor = d => dateParser(d.date)
 
+    // 2. DIMENSIONS
     let dimensions = {
         width: 700,
         height: 350,
@@ -561,16 +518,18 @@ async function drawHeightLineChart() {
     dimensions.boundedWidth = dimensions.width - dimensions.margin.left - dimensions.margin.right
     dimensions.boundedHeight = dimensions.height - dimensions.margin.top - dimensions.margin.bottom
 
+
+    // 3. DRAW CANVAS
     const wrapper = d3.select("#height-timeline")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
         .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`)
 
-    
     const bounds = wrapper.append("g")
         .style("transform", `translate(${dimensions.margin.left}px,
             ${dimensions.margin.top}px)`)
     
+    //4. CREATE SCALES        
     const yScale = d3.scaleLinear()
         .domain([501, d3.max(dataset, heightAccessor)])
         .range([dimensions.boundedHeight, 0])
@@ -579,11 +538,12 @@ async function drawHeightLineChart() {
         .domain([0, 50])
         .range([dimensions.boundedHeight,0])
 
-
     const xScale = d3.scaleTime()
         .domain(d3.extent(dataset, xAccessor))
         .range([0, dimensions.boundedWidth])
 
+
+    // 5. DRAW DATA    
     const heightLineGenerator = d3.line()
         .x(d => xScale(xAccessor(d)))
         .y(d => yScale(heightAccessor(d)))
@@ -615,6 +575,8 @@ async function drawHeightLineChart() {
           .attr("height", d => dimensions.boundedHeight - percipScale(percipAccessor(d)) )
           .attr("fill", "steelblue")
 
+    //6. DRAW PERIPHERALS
+        //axes
     const yAxisGenerator = d3.axisLeft()
         .scale(yScale)
     
@@ -654,7 +616,7 @@ async function drawHeightLineChart() {
         .call(xAxisGenerator) 
         .style("transform", `translateY(${dimensions.boundedHeight}px)`)
 
-    
+        //legend
     const legend = [
         {
             color: "darkslategrey",
@@ -704,11 +666,13 @@ async function drawHeightLineChart() {
 }
 
 async function drawHeightScatter() {
+    // 1. ACCESS DATA
     let dataset = await d3.json("./data.json")
-
+    
     const xAccessor = d => d.aareHeight  
     const yAccessor = d => d.aareFlow
     
+    // 2. DIMENSIONS
     const dimensions = {
         width: 400,
         height: 400,
@@ -724,7 +688,7 @@ async function drawHeightScatter() {
     dimensions.boundedHeight = dimensions.height - dimensions.margin.top
         - dimensions.margin.bottom
 
-
+    // 3. DRAW CANVAS
     const wrapper = d3.select("#height-scatter")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
@@ -734,6 +698,7 @@ async function drawHeightScatter() {
         .style("transform", `translate(${dimensions.margin.left}px,
             ${dimensions.margin.top}px)`)
 
+    //4. CREATE SCALES
     const xScale = d3.scaleLinear()
         .domain(d3.extent(dataset, xAccessor))
         .range([0, dimensions.boundedWidth])
@@ -742,7 +707,8 @@ async function drawHeightScatter() {
         .domain(d3.extent(dataset, yAccessor))
         .range([dimensions.boundedHeight, 0])
         .nice()
-
+    
+    // 5. DRAW DATA
     const dots = bounds.selectAll("circle")
         .data(dataset)
       .enter().append("circle")
@@ -750,7 +716,9 @@ async function drawHeightScatter() {
         .attr("cy", d => yScale(yAccessor(d)))
         .attr("r", 5)
         .attr("fill", "darkslategrey")
-       
+    
+    //6. DRAW PERIPHERALS
+        //axes
     const xAxisGenerator = d3.axisBottom()
         .scale(xScale)
 
