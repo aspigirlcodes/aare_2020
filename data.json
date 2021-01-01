@@ -1,213 +1,5 @@
 [
   {
-    "date": "2019-12-16T00:00:00",
-    "aareTemp": 7.945076923076923,
-    "aareTempMax": 8.24,
-    "aareHeight": 501.81107692307694,
-    "aareFlow": 74.79007692307692,
-    "airTemp": 4.2,
-    "airTempMax": 4.2,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-17T00:00:00",
-    "aareTemp": 7.975348837209302,
-    "aareTempMax": 8.22,
-    "aareHeight": 501.8062015503876,
-    "aareFlow": 74.04193798449613,
-    "airTemp": 4.1,
-    "airTempMax": 8,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-18T00:00:00",
-    "aareTemp": 8.12410447761194,
-    "aareTempMax": 8.56,
-    "aareHeight": 501.8191791044776,
-    "aareFlow": 75.58044776119402,
-    "airTemp": 5.5,
-    "airTempMax": 11,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-19T00:00:00",
-    "aareTemp": 7.895602836879433,
-    "aareTempMax": 8.3,
-    "aareHeight": 501.88,
-    "aareFlow": 82.70248226950355,
-    "airTemp": 3.4,
-    "airTempMax": 9.2,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-20T00:00:00",
-    "aareTemp": 7.847537313432836,
-    "aareTempMax": 8.13,
-    "aareHeight": 501.86873134328357,
-    "aareFlow": 81.25917910447761,
-    "airTemp": 3.7,
-    "airTempMax": 9,
-    "percip": 11.4,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-21T00:00:00",
-    "aareTemp": 7.959197080291971,
-    "aareTempMax": 8.2,
-    "aareHeight": 501.89160583941606,
-    "aareFlow": 84.02518248175183,
-    "airTemp": 4.7,
-    "airTempMax": 7.4,
-    "percip": 3.9,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-22T00:00:00",
-    "aareTemp": 7.715373134328358,
-    "aareTempMax": 7.91,
-    "aareHeight": 501.9185820895522,
-    "aareFlow": 87.01559701492538,
-    "airTemp": 5.1,
-    "airTempMax": 7.3,
-    "percip": 10.1,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-23T00:00:00",
-    "aareTemp": 7.745338345864662,
-    "aareTempMax": 7.92,
-    "aareHeight": 502.0131578947368,
-    "aareFlow": 98.82105263157895,
-    "airTemp": 4.9,
-    "airTempMax": 6.5,
-    "percip": 3.6,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-24T00:00:00",
-    "aareTemp": 7.586397058823529,
-    "aareTempMax": 7.73,
-    "aareHeight": 502.0528676470588,
-    "aareFlow": 103.90794117647059,
-    "airTemp": 5.5,
-    "airTempMax": 8.8,
-    "percip": 9,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-25T00:00:00",
-    "aareTemp": 7.751111111111111,
-    "aareTempMax": 8.13,
-    "aareHeight": 502.05148148148146,
-    "aareFlow": 103.6274074074074,
-    "airTemp": 5.5,
-    "airTempMax": 8.8,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-26T00:00:00",
-    "aareTemp": 7.394580152671756,
-    "aareTempMax": 7.62,
-    "aareHeight": 502.016106870229,
-    "aareFlow": 99.19847328244275,
-    "airTemp": 1.6,
-    "airTempMax": 4.8,
-    "percip": 6.3,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-27T00:00:00",
-    "aareTemp": 7.594461538461538,
-    "aareTempMax": 7.73,
-    "aareHeight": 502.048,
-    "aareFlow": 103.194,
-    "airTemp": 5.6,
-    "airTempMax": 7.2,
-    "percip": 5,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-28T00:00:00",
-    "aareTemp": 7.517163120567376,
-    "aareTempMax": 7.8,
-    "aareHeight": 502.02553191489363,
-    "aareFlow": 100.31751773049645,
-    "airTemp": 3,
-    "airTempMax": 5.2,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-29T00:00:00",
-    "aareTemp": 7.015555555555555,
-    "aareTempMax": 7.27,
-    "aareHeight": 501.89814814814815,
-    "aareFlow": 84.78051851851852,
-    "airTemp": -1.1,
-    "airTempMax": 0.4,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-30T00:00:00",
-    "aareTemp": 6.886148148148148,
-    "aareTempMax": 7.06,
-    "aareHeight": 501.8354814814815,
-    "aareFlow": 77.68362962962964,
-    "airTemp": -1.7,
-    "airTempMax": -0.1,
-    "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
-  },
-  {
-    "date": "2019-12-31T00:00:00",
-    "aareTemp": 6.9842537313432835,
-    "aareTempMax": 7.17,
-    "aareHeight": 501.7764179104478,
-    "aareFlow": 70.82216417910448,
-    "airTemp": -1.3,
-    "airTempMax": 0.3,
-    "percip": 0,
-    "aareTempAvg31": 7.460645161290323,
-    "airTempAvg31": 6.077419354838711,
-    "heightAvg31": 501.84139169117867
-  },
-  {
     "date": "2020-01-01T00:00:00",
     "aareTemp": 6.821678832116788,
     "aareTempMax": 7.01,
@@ -216,9 +8,9 @@
     "airTemp": -2.3,
     "airTempMax": -1.2,
     "percip": 0,
-    "aareTempAvg31": 7.418064516129031,
-    "airTempAvg31": 6.25483870967742,
-    "heightAvg31": 501.83813114527277
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-02T00:00:00",
@@ -229,9 +21,9 @@
     "airTemp": -1.7,
     "airTempMax": -0.1,
     "percip": 0,
-    "aareTempAvg31": 7.368709677419355,
-    "airTempAvg31": 6.158064516129034,
-    "heightAvg31": 501.83453666710784
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-03T00:00:00",
@@ -242,9 +34,9 @@
     "airTemp": 1.9,
     "airTempMax": 4.5,
     "percip": 0.3,
-    "aareTempAvg31": 7.314193548387097,
-    "airTempAvg31": 6.000000000000002,
-    "heightAvg31": 501.82919242059836
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-04T00:00:00",
@@ -255,9 +47,9 @@
     "airTemp": 3.7,
     "airTempMax": 7.7,
     "percip": 0,
-    "aareTempAvg31": 7.252258064516129,
-    "airTempAvg31": 5.829032258064518,
-    "heightAvg31": 501.82055355356465
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-05T00:00:00",
@@ -268,9 +60,9 @@
     "airTemp": 0.3,
     "airTempMax": 5.2,
     "percip": 0,
-    "aareTempAvg31": 7.19290322580645,
-    "airTempAvg31": 5.629032258064517,
-    "heightAvg31": 501.8091639029397
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-06T00:00:00",
@@ -281,9 +73,9 @@
     "airTemp": -1,
     "airTempMax": 4,
     "percip": 0,
-    "aareTempAvg31": 7.126774193548386,
-    "airTempAvg31": 5.4709677419354845,
-    "heightAvg31": 501.7967572629585
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-07T00:00:00",
@@ -294,9 +86,9 @@
     "airTemp": 0.9,
     "airTempMax": 7.9,
     "percip": 0,
-    "aareTempAvg31": 7.079677419354838,
-    "airTempAvg31": 5.37741935483871,
-    "heightAvg31": 501.78430712256096
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-08T00:00:00",
@@ -307,9 +99,9 @@
     "airTemp": 0.7,
     "airTempMax": 6.4,
     "percip": 0,
-    "aareTempAvg31": 7.0135483870967725,
-    "airTempAvg31": 5.119354838709678,
-    "heightAvg31": 501.7701048965659
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-09T00:00:00",
@@ -320,9 +112,9 @@
     "airTemp": 2.4,
     "airTempMax": 8.5,
     "percip": 0,
-    "aareTempAvg31": 6.9654838709677405,
-    "airTempAvg31": 4.932258064516129,
-    "heightAvg31": 501.75463126876355
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-10T00:00:00",
@@ -333,9 +125,9 @@
     "airTemp": 6,
     "airTempMax": 9.4,
     "percip": 0,
-    "aareTempAvg31": 6.914838709677418,
-    "airTempAvg31": 4.780645161290323,
-    "heightAvg31": 501.7392202680066
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-11T00:00:00",
@@ -346,9 +138,9 @@
     "airTemp": 2.2,
     "airTempMax": 6.6,
     "percip": 0,
-    "aareTempAvg31": 6.876774193548387,
-    "airTempAvg31": 4.803225806451613,
-    "heightAvg31": 501.72485600815446
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-12T00:00:00",
@@ -359,9 +151,9 @@
     "airTemp": 0.4,
     "airTempMax": 6.5,
     "percip": 0,
-    "aareTempAvg31": 6.841290322580644,
-    "airTempAvg31": 4.790322580645161,
-    "heightAvg31": 501.71034085663933
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-13T00:00:00",
@@ -372,9 +164,9 @@
     "airTemp": -0.1,
     "airTempMax": 5.4,
     "percip": 0,
-    "aareTempAvg31": 6.794838709677419,
-    "airTempAvg31": 4.8741935483870975,
-    "heightAvg31": 501.69761689515605
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-14T00:00:00",
@@ -385,9 +177,9 @@
     "airTemp": 1.2,
     "airTempMax": 8.8,
     "percip": 0,
-    "aareTempAvg31": 6.76709677419355,
-    "airTempAvg31": 5.0354838709677425,
-    "heightAvg31": 501.68971263044256
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-15T00:00:00",
@@ -398,9 +190,9 @@
     "airTemp": 2.9,
     "airTempMax": 10.8,
     "percip": 0,
-    "aareTempAvg31": 6.751612903225808,
-    "airTempAvg31": 5.283870967741936,
-    "heightAvg31": 501.68336102008124
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
   },
   {
     "date": "2020-01-16T00:00:00",
@@ -4558,9 +4350,9 @@
     "airTemp": -0.4,
     "airTempMax": 0.1,
     "percip": 4,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.935483870967744,
+    "airTempAvg31": 4.306451612903226,
+    "heightAvg31": 501.71509076628007
   },
   {
     "date": "2020-12-01T00:00:00",
@@ -4571,9 +4363,9 @@
     "airTemp": 1,
     "airTempMax": 2.8,
     "percip": 2.6,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.829032258064515,
+    "airTempAvg31": 4.048387096774194,
+    "heightAvg31": 501.7123327328711
   },
   {
     "date": "2020-12-02T00:00:00",
@@ -4584,9 +4376,9 @@
     "airTemp": 0.8,
     "airTempMax": 1.2,
     "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.719354838709675,
+    "airTempAvg31": 3.9225806451612892,
+    "heightAvg31": 501.7084933559019
   },
   {
     "date": "2020-12-03T00:00:00",
@@ -4597,9 +4389,9 @@
     "airTemp": 0.5,
     "airTempMax": 4.4,
     "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.616129032258064,
+    "airTempAvg31": 3.851612903225806,
+    "heightAvg31": 501.70509162524996
   },
   {
     "date": "2020-12-04T00:00:00",
@@ -4610,9 +4402,9 @@
     "airTemp": 0.8,
     "airTempMax": 3.5,
     "percip": 6.6,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.509677419354839,
+    "airTempAvg31": 3.612903225806452,
+    "heightAvg31": 501.70295900876255
   },
   {
     "date": "2020-12-05T00:00:00",
@@ -4623,9 +4415,9 @@
     "airTemp": 0.8,
     "airTempMax": 1.5,
     "percip": 8,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.419354838709678,
+    "airTempAvg31": 3.5032258064516135,
+    "heightAvg31": 501.70142496678517
   },
   {
     "date": "2020-12-06T00:00:00",
@@ -4636,9 +4428,9 @@
     "airTemp": 1.2,
     "airTempMax": 2.6,
     "percip": 2.9,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.341935483870966,
+    "airTempAvg31": 3.551612903225807,
+    "heightAvg31": 501.6992048330116
   },
   {
     "date": "2020-12-07T00:00:00",
@@ -4649,9 +4441,9 @@
     "airTemp": 1.5,
     "airTempMax": 3.1,
     "percip": 0.1,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.287096774193547,
+    "airTempAvg31": 3.8548387096774204,
+    "heightAvg31": 501.70106163184676
   },
   {
     "date": "2020-12-08T00:00:00",
@@ -4662,9 +4454,9 @@
     "airTemp": -0.1,
     "airTempMax": 0.6,
     "percip": 1.1,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.232258064516127,
+    "airTempAvg31": 4.00967741935484,
+    "heightAvg31": 501.7051455546644
   },
   {
     "date": "2020-12-09T00:00:00",
@@ -4675,9 +4467,9 @@
     "airTemp": 0.3,
     "airTempMax": 1.3,
     "percip": 1.9,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.170967741935481,
+    "airTempAvg31": 4.090322580645162,
+    "heightAvg31": 501.7125231008567
   },
   {
     "date": "2020-12-10T00:00:00",
@@ -4688,9 +4480,9 @@
     "airTemp": -0.8,
     "airTempMax": 0,
     "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.109677419354837,
+    "airTempAvg31": 4.129032258064517,
+    "heightAvg31": 501.7198976436189
   },
   {
     "date": "2020-12-11T00:00:00",
@@ -4701,9 +4493,9 @@
     "airTemp": -0.7,
     "airTempMax": 0.6,
     "percip": 2.9,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 8.032258064516128,
+    "airTempAvg31": 4.112903225806453,
+    "heightAvg31": 501.7265072909841
   },
   {
     "date": "2020-12-12T00:00:00",
@@ -4714,9 +4506,9 @@
     "airTemp": 2.6,
     "airTempMax": 4.2,
     "percip": 6.3,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 7.935483870967741,
+    "airTempAvg31": 4.0677419354838715,
+    "heightAvg31": 501.7319991346685
   },
   {
     "date": "2020-12-13T00:00:00",
@@ -4727,9 +4519,9 @@
     "airTemp": 3.8,
     "airTempMax": 6.2,
     "percip": 0,
-    "aareTempAvg31": null,
-    "airTempAvg31": null,
-    "heightAvg31": null
+    "aareTempAvg31": 7.851612903225806,
+    "airTempAvg31": 4.112903225806452,
+    "heightAvg31": 501.7350239694163
   },
   {
     "date": "2020-12-14T00:00:00",
@@ -4740,6 +4532,227 @@
     "airTemp": 1.6,
     "airTempMax": 6.1,
     "percip": 0,
+    "aareTempAvg31": 7.77741935483871,
+    "airTempAvg31": 4.267741935483872,
+    "heightAvg31": 501.7356490621502
+  },
+  {
+    "date": "2020-12-15T00:00:00",
+    "aareTemp": 7.466129032258064,
+    "aareTempMax": 7.8,
+    "aareHeight": 501.7383064516129,
+    "aareFlow": 66.78225806451613,
+    "airTemp": 3.8,
+    "airTempMax": 5.9,
+    "percip": 3.5,
+    "aareTempAvg31": 7.7064516129032254,
+    "airTempAvg31": 4.325806451612904,
+    "heightAvg31": 501.7352927790496
+  },
+  {
+    "date": "2020-12-16T00:00:00",
+    "aareTemp": 7.499180327868853,
+    "aareTempMax": 7.7,
+    "aareHeight": 501.70229508196724,
+    "aareFlow": 62.98360655737705,
+    "airTemp": 4.3,
+    "airTempMax": 5.4,
+    "percip": 0,
+    "aareTempAvg31": 7.641935483870967,
+    "airTempAvg31": 4.396774193548388,
+    "heightAvg31": 501.73361742461384
+  },
+  {
+    "date": "2020-12-17T00:00:00",
+    "aareTemp": 7.588596491228071,
+    "aareTempMax": 7.9,
+    "aareHeight": 501.6845614035088,
+    "aareFlow": 61.19298245614035,
+    "airTemp": 4.2,
+    "airTempMax": 7.1,
+    "percip": 0,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-18T00:00:00",
+    "aareTemp": 7.3126050420168065,
+    "aareTempMax": 7.7,
+    "aareHeight": 501.6724369747899,
+    "aareFlow": 60.05042016806723,
+    "airTemp": 3.6,
+    "airTempMax": 8.4,
+    "percip": 0,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-19T00:00:00",
+    "aareTemp": 7.0777777777777775,
+    "aareTempMax": 7.5,
+    "aareHeight": 501.6672222222222,
+    "aareFlow": 59.05555555555556,
+    "airTemp": 1.4,
+    "airTempMax": 4.4,
+    "percip": 0,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-20T00:00:00",
+    "aareTemp": 7.293859649122807,
+    "aareTempMax": 7.7,
+    "aareHeight": 501.6594736842105,
+    "aareFlow": 58.1578947368421,
+    "airTemp": 3.8,
+    "airTempMax": 6.5,
+    "percip": 0.3,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-21T00:00:00",
+    "aareTemp": 7.52,
+    "aareTempMax": 7.7,
+    "aareHeight": 501.65133333333335,
+    "aareFlow": 58,
+    "airTemp": 5.5,
+    "airTempMax": 6.8,
+    "percip": 2.1,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-22T00:00:00",
+    "aareTemp": 7.55546875,
+    "aareTempMax": 7.9,
+    "aareHeight": 501.768671875,
+    "aareFlow": 70.125,
+    "airTemp": 9.1,
+    "airTempMax": 13.4,
+    "percip": 0.1,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-23T00:00:00",
+    "aareTemp": 7.545299145299145,
+    "aareTempMax": 7.9,
+    "aareHeight": 501.8361538461538,
+    "aareFlow": 77.5982905982906,
+    "airTemp": 7.9,
+    "airTempMax": 11.7,
+    "percip": 12.1,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-24T00:00:00",
+    "aareTemp": 7.590225563909774,
+    "aareTempMax": 7.8,
+    "aareHeight": 501.9325563909774,
+    "aareFlow": 88.90977443609023,
+    "airTemp": 6.5,
+    "airTempMax": 8.9,
+    "percip": 1.4,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-25T00:00:00",
+    "aareTemp": 7.103597122302158,
+    "aareTempMax": 7.4,
+    "aareHeight": 501.9288489208633,
+    "aareFlow": 88.33812949640287,
+    "airTemp": 1,
+    "airTempMax": 3,
+    "percip": 0,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-26T00:00:00",
+    "aareTemp": 6.369565217391305,
+    "aareTempMax": 6.8,
+    "aareHeight": 501.90043478260867,
+    "aareFlow": 84.98260869565217,
+    "airTemp": -1.4,
+    "airTempMax": 1.5,
+    "percip": 0,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-27T00:00:00",
+    "aareTemp": 5.95,
+    "aareTempMax": 6.2,
+    "aareHeight": 501.8606603773585,
+    "aareFlow": 80.55660377358491,
+    "airTemp": -2.3,
+    "airTempMax": 0.6,
+    "percip": 0.9,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-28T00:00:00",
+    "aareTemp": 6.3392307692307694,
+    "aareTempMax": 6.5,
+    "aareHeight": 501.80830769230766,
+    "aareFlow": 74.47692307692307,
+    "airTemp": 0.8,
+    "airTempMax": 3.3,
+    "percip": 6,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-29T00:00:00",
+    "aareTemp": 6.243884892086331,
+    "aareTempMax": 6.6,
+    "aareHeight": 501.7509352517986,
+    "aareFlow": 68.12949640287769,
+    "airTemp": 2.9,
+    "airTempMax": 5.8,
+    "percip": 4.7,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-30T00:00:00",
+    "aareTemp": 6.397014925373134,
+    "aareTempMax": 6.6,
+    "aareHeight": 501.7189552238806,
+    "aareFlow": 64.70149253731343,
+    "airTemp": 1.2,
+    "airTempMax": 3.2,
+    "percip": 2.5,
+    "aareTempAvg31": null,
+    "airTempAvg31": null,
+    "heightAvg31": null
+  },
+  {
+    "date": "2020-12-31T00:00:00",
+    "aareTemp": 6.276229508196721,
+    "aareTempMax": 6.5,
+    "aareHeight": 501.66901639344263,
+    "aareFlow": 59.131147540983605,
+    "airTemp": 0,
+    "airTempMax": 2.3,
+    "percip": 8.8,
     "aareTempAvg31": null,
     "airTempAvg31": null,
     "heightAvg31": null
